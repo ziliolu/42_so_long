@@ -1,32 +1,34 @@
 #ifndef SO_LONG_H
 # define SO_LONG_H
-#include "libft/libft/libft.h"
-#include "libft/printf/ft_printf.h"
-#include "libft/get_next_line/get_next_line.h"
+
+#include "../libft/libft/libft.h"
+#include "../libft/printf/ft_printf.h"
+#include "../libft/get_next_line/get_next_line.h"
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "mlx/mlx.h"
+#include "../mlx/mlx.h"
 #include <X11/X.h>
 #include <X11/keysym.h>
+#include <stdbool.h>
 
-#define SIZE 64
-#define PLAYER 'P'
-#define WALL '1'
-#define EXIT 'E'
-#define COLLECTIBLE 'C'
-#define EMPTY '0'
-
+# define SIZE 64
+# define PLAYER 'P'
+# define WALL '1'
+# define EXIT 'E'
+# define COLLECTIBLE 'C'
+# define EMPTY '0'
 # define ESC 65307
-# define ENTER 36 //enter
-# define FOLLOW 3 // key "f"
-# define COLOR 8  // key "c"
 # define UP 65362   // key "arrow up"
 # define DOWN 65364 // key "arrow down"
 # define RIGHT 65363 //key "right arrow"
 # define LEFT 65361  //key "left arrow"
-# define PENGUIN 35 // key "p"
-# define RAND_COLOR 15 // key "r"
+
+typedef struct s_point
+{
+	int x;
+	int y;
+}				t_point;
 
 typedef struct s_mlx {
 	
@@ -42,7 +44,6 @@ typedef struct s_path
 	void *collectible;
 	void *player;
 	void *exit;
-	void *winner;
 
 }				t_path;
 
@@ -55,6 +56,8 @@ typedef struct s_sprite
 	int moves; 
 	int n_collectibles;
 }				t_sprite;
+
+
 
 typedef struct s_map
 {
@@ -92,18 +95,20 @@ typedef struct s_root
 
 }			t_root;
 
-// char **map_array_creation(int fd);
+void ft_animate(t_root *root);
 int args_validation(int argc, char **argv);
 char **map_array_creation(int fd);
-int map_fulfill(t_root *root, char **array);
+void map_fulfill(t_root *root, char **array);
 int count_line(char **array);
-t_map ft_newmap(void);
-void ft_newmap_err(t_root *root);
+void check_map (t_root *root);
+t_map ft_initialize_map(void);
+void ft_initialize_map_err(t_root *root);
 int ft_verify_extension(char *str, char *extension);
 int verify_other_cols(char **array, int i);
 int count_col(char **array);
 int times_it_appear(char **array, char c);
 void ft_print_err(t_root *root);
+int not_surrounded_by_walls(t_root *root);
 int invalid_character(char **array);
 t_path ft_initialize_paths(t_root *root);
 void game_init(t_root root);
@@ -113,13 +118,12 @@ int key_hook(int key, t_root *root);
 t_sprite ft_initialize_sprite();
 void input_player_position(t_root *root);
 void print_tab(char **zone);
-void flood_fill(t_root *root, int i, int j);
+//void flood_fill(t_root *root, int i, int j);
 char **copy_tab(char **array);
-int flood_fill_problem(t_root *root);
 int init_structs(t_root *root, char *fd);
-int destroy(t_root *root);
+void destroy(t_root *root);
 void free_array(char **array, t_root *root);
 void input_position(t_root *root, char c);
 void print_movements(t_root *root);
-
+void print_tab(char **zone);
 #endif

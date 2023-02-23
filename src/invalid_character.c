@@ -1,4 +1,4 @@
-#include "so_long.h"
+#include "../includes/so_long.h"
 
 int invalid_character(char **array)
 {

@@ -1,4 +1,12 @@
-#include "so_long.h"
+#include "../includes/so_long.h"
+
+void game_init(t_root root)
+{
+	initial_image_render(root);
+	input_position(&root, EXIT);
+	mlx_hook(root.mlx.window_ptr, KeyPress, KeyPressMask, &key_hook, &root);
+}
+
 void initial_image_render(t_root root)
 {
 	int i;
@@ -30,13 +38,4 @@ void initial_image_render(t_root root)
 		line += SIZE;
 		i++;
 	}
-}
-
-void game_init(t_root root)
-{
-	initial_image_render(root);
-	input_position(&root, PLAYER);
-	input_position(&root, EXIT);
-
-	mlx_hook(root.mlx.window_ptr, KeyPress, KeyPressMask, &key_hook, &root);
 }

@@ -1,15 +1,12 @@
-#include "so_long.h"
+#include "../includes/so_long.h"
 
 int main(int argc, char **argv)
 {
+	t_root	root;
+
 	if(args_validation(argc, argv) != 1)
 		return(-1);
-
-	t_root root;
-
 	init_structs(&root, argv[1]);
-	//verify_flood_fill(&root);
-
 	game_init(root);
 	mlx_loop(root.mlx.mlx_ptr);
 }

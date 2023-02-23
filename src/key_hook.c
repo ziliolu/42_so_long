@@ -1,4 +1,4 @@
-#include "so_long.h"
+#include "../includes/so_long.h"
 
 void input_position(t_root *root, char c)
 {
@@ -68,8 +68,8 @@ void change_player_position(t_root *root, int direction)
 		print_movements(root);
 		if(last_is_door == 1)
 		{
-			mlx_put_image_to_window(root->mlx.mlx_ptr, root->mlx.window_ptr, root->path.player, root->player.next_x * 64, root->player.next_y *64);
-			mlx_put_image_to_window(root->mlx.mlx_ptr, root->mlx.window_ptr, root->path.exit, root->exit.x * 64, root->exit.y * 64);
+			mlx_put_image_to_window(root->mlx.mlx_ptr, root->mlx.window_ptr, root->path.player, root->player.next_x * SIZE, root->player.next_y * SIZE);
+			mlx_put_image_to_window(root->mlx.mlx_ptr, root->mlx.window_ptr, root->path.exit, root->exit.x * SIZE, root->exit.y * SIZE);
 			root->map.map_array[root->exit.y][root->exit.x] = EXIT;
 			root->map.map_array[root->player.next_y][root->player.next_x] = PLAYER;
 			last_is_door = 0;
@@ -95,8 +95,8 @@ void change_player_position(t_root *root, int direction)
 		}
 		else
 		{
-			ft_printf("YOU WON!");
-			destroy(root);
+			ft_putstr("Congratulations! You won this super hard game!\n");
+			destroy(root); 
 		}
 	}
 	else
@@ -109,10 +109,8 @@ void change_player_position(t_root *root, int direction)
 int key_hook(int key, t_root *root)
 {
 	if(key == ESC)
-	{
 		destroy(root);
-		return (0);
-	}
+	//ft_animate(root);
 	change_player_position(root, key);
 	return (0);
 }
