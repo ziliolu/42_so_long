@@ -2,18 +2,24 @@
 
 int init_structs(t_root *root, char *fd)
 {
+
 	root->map = ft_initialize_map();
 	root->floodfill = ft_initialize_map();
 	root->mlx.mlx_ptr = mlx_init();
 	root->path = ft_initialize_paths(root);
 	root->player = ft_initialize_sprite();
 	root->exit = ft_initialize_sprite();
-	root->map.map_array = map_array_creation(open(fd, O_RDONLY));
-	root->floodfill.map_array = map_array_creation(open(fd, O_RDONLY));
     ft_initialize_map_err(root);
+	if((root->map.map_array = map_array_creation(open(fd, O_RDONLY))) == NULL)
+	{
+		root->map_err.empty_fd = 1;
+		ft_print_err(root);
+		return(-1);
+	}
+	root->floodfill.map_array = map_array_creation(open(fd, O_RDONLY));
 	map_fulfill(root, root->map.map_array);
 	root->mlx.window_ptr = mlx_new_window(root->mlx.mlx_ptr, root->map.col * SIZE, root->map.line * SIZE, "so_long");
-	return(0);
+	return(1);
 }
 
 t_map ft_initialize_map(void)

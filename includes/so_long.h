@@ -80,7 +80,8 @@ typedef struct s_map_err
 	int invalid_collectibles;
 	int invalid_player;
 	int invalid_character;
-	int invalid_path; 
+	int invalid_path;
+	int empty_fd;
 }				t_map_err;
 
 typedef struct s_root
@@ -95,6 +96,7 @@ typedef struct s_root
 
 }			t_root;
 
+void err_message(char *str, int *error);
 void ft_animate(t_root *root);
 int args_validation(int argc, char **argv);
 char **map_array_creation(int fd);

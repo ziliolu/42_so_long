@@ -6,9 +6,12 @@ int main(int argc, char **argv)
 
 	if(args_validation(argc, argv) != 1)
 		return(-1);
-	init_structs(&root, argv[1]);
-	game_init(root);
-	mlx_loop(root.mlx.mlx_ptr);
+	if(init_structs(&root, argv[1]) == 1)
+	{
+		game_init(root);
+		mlx_loop(root.mlx.mlx_ptr);
+
+	}
 }
 
 //animacao dos personagens 

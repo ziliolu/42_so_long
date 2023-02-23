@@ -12,6 +12,8 @@ char **map_array_creation(int fd)
         free(temp);
         free(line);
     }
+    if(map_array[0] == '\0' || map_array[0] == '\n')
+        return(NULL);
     map = ft_split(map_array, '\n');
     free(map_array);
     if(!map)
