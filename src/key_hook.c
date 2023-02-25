@@ -42,7 +42,7 @@ void walk_player(t_root *root)
 void print_movements(t_root *root)
 {
 	root->player.moves += 1;
-	ft_printf("Number of movements: %d\n", root->player.moves);
+	mlx_string_put(root->mlx.mlx_ptr, root->mlx.window_ptr, root->player.next_x * SIZE + 28, root->player.next_y * SIZE + 15, 16777215, ft_itoa(root->player.moves));
 }
 
 void change_player_position(t_root *root, int direction)
@@ -65,7 +65,6 @@ void change_player_position(t_root *root, int direction)
 	next = root->map.map_array[root->player.next_y][root->player.next_x];
 	if(next == COLLECTIBLE || next == EMPTY)
 	{
-		print_movements(root);
 		if(last_is_door == 1)
 		{
 			mlx_put_image_to_window(root->mlx.mlx_ptr, root->mlx.window_ptr, root->path.player, root->player.next_x * SIZE, root->player.next_y * SIZE);
@@ -82,15 +81,16 @@ void change_player_position(t_root *root, int direction)
 		}
 		if(next == COLLECTIBLE)
 			root->player.n_collectibles += 1;
+		print_movements(root);
 	}
 	else if(next == EXIT)
 	{
 		if(root->player.n_collectibles != root->map.collectibles)
 		{
 			walk_player(root);
-			print_movements(root);
 			root->map.map_array[root->player.next_y][root->player.next_x] = PLAYER;
 			root->map.map_array[root->player.y][root->player.x] = EMPTY;
+			print_movements(root);
 			last_is_door = 1;
 		}
 		else
