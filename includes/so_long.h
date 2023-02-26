@@ -113,6 +113,7 @@ void ft_print_err(t_root *root);
 int not_surrounded_by_walls(t_root *root);
 int invalid_character(char **array);
 t_path ft_initialize_paths(t_root *root);
+void ft_initialize_mlx(t_root *root);
 void game_init(t_root root);
 void initial_image_render(t_root root);
 void change_player_position(t_root *root, int direction);

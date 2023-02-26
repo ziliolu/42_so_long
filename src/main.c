@@ -3,7 +3,6 @@
 int main(int argc, char **argv)
 {
 	t_root	root;
-
 	if(args_validation(argc, argv) != 1)
 		return(-1);
 	if(init_structs(&root, argv[1]) == 1)

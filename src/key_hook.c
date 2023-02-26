@@ -41,8 +41,12 @@ void walk_player(t_root *root)
 
 void print_movements(t_root *root)
 {
+	char *moves;
+
+	moves = ft_itoa(root->player.moves);
 	root->player.moves += 1;
-	mlx_string_put(root->mlx.mlx_ptr, root->mlx.window_ptr, root->player.next_x * SIZE + 28, root->player.next_y * SIZE + 15, 16777215, ft_itoa(root->player.moves));
+	mlx_string_put(root->mlx.mlx_ptr, root->mlx.window_ptr, root->player.next_x * SIZE + 28, root->player.next_y * SIZE + 15, 16777215, moves);
+	free(moves);
 }
 
 void change_player_position(t_root *root, int direction)

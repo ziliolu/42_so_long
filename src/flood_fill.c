@@ -19,24 +19,3 @@ void print_tab(char **zone)
 	}	
 }
 
-// static bool flood_fill(t_root *root, int i, int j)
-// {
-
-// 	if(root->floodfill.map_array[i][j] == WALL)
-// 		return (false);
-
-// 	else if(root->floodfill.map_array[i][j] == COLLECTIBLE )
-// 		root->floodfill.collectibles++;
-// 	else if(root->floodfill.map_array[i][j] == EXIT )
-// 		root->floodfill.exit++;
-
-// 	root->floodfill.map_array[i][j] = WALL;
-// 	flood_fill(root, i - 1, j);
-// 	flood_fill(root, i + 1, j);
-// 	flood_fill(root, i, j - 1);
-// 	flood_fill(root, i, j + 1);
-// 	return(root->map.collectibles == root->floodfill.collectibles && root->map.exit == root->floodfill.exit);
-// }
-
-
-
