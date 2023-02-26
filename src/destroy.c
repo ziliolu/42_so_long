@@ -1,12 +1,12 @@
 #include "../includes/so_long.h"
 
-void destroy(t_root *root)
+int destroy(t_root *root)
 {
 	int i;
 
 	i = 0;
 	if(!root)
-		return ;
+		return (-1);
 	if (root->path.wall)
 		mlx_destroy_image(root->mlx.mlx_ptr, root->path.wall);
 	if (root->path.collectible)

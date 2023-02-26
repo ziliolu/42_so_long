@@ -5,7 +5,9 @@ void game_init(t_root root)
 	initial_image_render(root);
 	input_position(&root, EXIT);
 	mlx_hook(root.mlx.window_ptr, KeyPress, KeyPressMask, &key_hook, &root);
+	mlx_hook(root.mlx.window_ptr, 17, (1L << 17), &destroy, &root);
 }
+
 
 void initial_image_render(t_root root)
 {

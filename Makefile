@@ -19,11 +19,14 @@ CC = cc
 arg = 0
 OBJ = $(SRCS:.c=.o)
 
-all: $(NAME)
+all: $(NAME) $(LIBFT_A)
 	@printf "\n%s\n\n" "⏳ Compiling the program...";
 	$(CC) $(NAME) $(LIBFT_A) -g -L./mlx -lmlx -lXext -lX11 -lm -lbsd -o so_long 
 	@printf "\n%s\n\n" "💻 Type 'make run arg=your-map.ber' or './so_long your-map.ber' to initialize the game!";
-	
+
+$(LIBFT_A):
+	make -C libft
+
 $(NAME): $(OBJ)
 	$(AR) $(NAME) $(OBJ)
 
@@ -37,7 +40,9 @@ clean: oclean
 	rm -f $(EXECUTABLE)
 
 fclean: clean
+	@printf "\n%s\n\n" "🛁 Cleaning .a files...";
 	rm -f $(NAME)
+	rm -f $(LIBFT_A)
 
 run: all oclean
 	@printf "\n%s\n\n" "▶️  Initializing program...";

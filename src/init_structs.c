@@ -1,9 +1,7 @@
 #include "../includes/so_long.h"
 
-
 int init_structs(t_root *root, char *fd)
 {
-
 	root->map = ft_initialize_map();
 	root->floodfill = ft_initialize_map();
 	ft_initialize_mlx(root);
@@ -60,7 +58,7 @@ t_sprite ft_initialize_sprite()
 	t_sprite sprite;
 	sprite.x = 0;
 	sprite.y = 0;
-	sprite.moves = 0;
+	sprite.moves = 1;
 	sprite.n_collectibles = 0;
 	return (sprite);
 }
@@ -74,8 +72,6 @@ t_path ft_initialize_paths(t_root *root)
 	path.empty = mlx_xpm_file_to_image(root->mlx.mlx_ptr, "./textures/empty.xpm", &w, &h);
 	path.collectible = mlx_xpm_file_to_image(root->mlx.mlx_ptr, "./textures/collectible.xpm", &w, &h);
 	path.exit = mlx_xpm_file_to_image(root->mlx.mlx_ptr, "./textures/exit.xpm", &w, &h);
-
 	path.player = mlx_xpm_file_to_image(root->mlx.mlx_ptr, "./textures/player0.xpm", &w, &h);
-	//path.player = mlx_xpm_file_to_image(root->mlx.mlx_ptr, "./textures/player.xpm", &w, &h);
 	return (path);
 }
