@@ -1,4 +1,4 @@
-# so_long | 42 Porto | rank 2
+# so_long | rank 2 | 42 Porto
 
 This is my first programming graphic project!
 During the development of this project, I explored the main concepts about MiniLibX library to be able to code a simple 2D game. Also, I could learn about rendering, graphic management, color schemes and sprites.
