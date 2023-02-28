@@ -14,6 +14,14 @@ chosing the shortest possible route.
 
 You can also take a look in the [complete subject]. 
 
+## Languages & Tools
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=c,Makefile" />
+  </a>
+  </p>
+</p>
+
 ## 🚨 Disclaimer 
 Maybe you could notice a different coding style. At 42 schools we need to follow some rules like:
 <p>       🗙 The usage of for, do while, switch, case is not allowed<p> 
@@ -22,14 +30,13 @@ Maybe you could notice a different coding style. At 42 schools we need to follow
     
 
 
-## Installation
+## Installation/Compilation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+To compile and run the project at the same time it's very easy, you can just follow the syntax below: 
 
-```bash
-pip install foobar
+```sh
+$ make run arg=path_to_the_map_file.ber
 ```
-
 ## Usage
 
 ```python
@@ -44,6 +51,7 @@ foobar.pluralize('goose')
 # returns 'phenomenon'
 foobar.singularize('phenomena')
 ```
+
 
 ## Contributing
 
