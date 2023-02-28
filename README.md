@@ -30,7 +30,7 @@ Maybe you could notice a different coding style. At 42 schools we need to follow
     
 
 
-## Installation/Compilation
+## ⚙️ Compilation
 
 To compile and run the project at the same time it's very easy, you can just follow the syntax below: 
 
