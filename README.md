@@ -24,9 +24,9 @@ You can also take a look in the [complete subject].
 
 ## 🚨 Disclaimer 
 Maybe you could notice a different coding style. At 42 schools we need to follow some rules like:
-<p>       🗙 The usage of for, do while, switch, case is not allowed<p> 
-<p>       🗙 Functions with more than 25 lines are not allowed <p> 
-<p>       🗙 Variables declarations and assigns in the same line are not allowed <p> 
+- The usage of for, do while, switch, case is not allowed<p> 
+- Functions with more than 25 lines are not allowed <p> 
+- Variables declarations and assigns in the same line are not allowed <p> 
     
 
 
