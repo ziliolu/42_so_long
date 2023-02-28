@@ -38,7 +38,7 @@ To compile and run the project at the same time it's very easy, you can just fol
 $ make run arg=path_to_the_map_file.ber
 ```
 Make sure you have the right path of the map, if you prefer you can also test the project with some of the maps that I have available in `/maps`. 
-For this, you can run some of the following commands in the terminal: 
+For this, you can run one of the following commands in the terminal: 
   
 ```sh
 $ make run arg=valid1.ber
