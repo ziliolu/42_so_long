@@ -41,11 +41,11 @@ Make sure you have the right path of the map, if you prefer you can also test th
 For this, you can run one of the following commands in the terminal: 
   
 ```sh
-$ make run arg=valid1.ber
+$ make run arg=maps/valid1.ber
 ```
   
 ```sh
-$ make run arg=valid2.ber
+$ make run arg=maps/valid2.ber
 ```
   
 ## License
