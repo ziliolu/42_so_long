@@ -14,7 +14,7 @@ chosing the shortest possible route.
 
 You can also take a look in the [complete subject]. 
 
-## Languages & Tools
+## 💻 Languages & Tools
 <p align="left">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=c,Makefile" />
