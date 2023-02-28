@@ -37,29 +37,17 @@ To compile and run the project at the same time it's very easy, you can just fol
 ```sh
 $ make run arg=path_to_the_map_file.ber
 ```
-## Usage
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+Make sure you have the right path of the map, if you prefer you can also test the project with some of the maps that I have available in `/maps`. 
+For this, you can run some of the following commands in the terminal: 
+  
+```sh
+$ make run arg=valid1.ber
 ```
-
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
+  
+```sh
+$ make run arg=valid2.ber
+```
+  
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
