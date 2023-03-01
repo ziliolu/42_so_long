@@ -14,7 +14,7 @@ SRCS =	./src/main.c				\
 		./src/map_validations.c			
 
 AR = ar rc
-CFLAGS = -Wextra -Werror -Wall -g 
+CFLAGS = -Wextra -Werror -Wall -g -O3
 CC = cc
 arg = 0
 OBJ = $(SRCS:.c=.o)
@@ -28,6 +28,7 @@ $(LIBFT_A):
 	make -C libft
 
 $(NAME): $(OBJ)
+	make -C mlx
 	$(AR) $(NAME) $(OBJ)
 
 oclean: $(OBJ)
