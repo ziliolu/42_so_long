@@ -57,7 +57,11 @@ typedef struct s_sprite
 	int n_collectibles;
 }				t_sprite;
 
-
+typedef struct s_counter
+{
+	int i;
+	int j;
+}				t_counter;
 
 typedef struct s_map
 {
@@ -93,9 +97,12 @@ typedef struct s_root
 	t_path path;
 	t_sprite player;
 	t_sprite exit;
+	t_counter counter;
 
 }			t_root;
 
+int times_it_appear(char **array, char c);
+void	destroy_images(t_root *root);
 void err_message(char *str, int *error);
 void ft_animate(t_root *root);
 int args_validation(int argc, char **argv);
@@ -115,10 +122,11 @@ int invalid_character(char **array);
 t_path ft_initialize_paths(t_root *root);
 void ft_initialize_mlx(t_root *root);
 void game_init(t_root root);
-void initial_image_render(t_root root);
+void initial_image_render(t_root *root);
 void change_player_position(t_root *root, int direction);
 int key_hook(int key, t_root *root);
 t_sprite ft_initialize_sprite();
+void ft_initialize_counter(t_root *root);
 void input_player_position(t_root *root);
 void print_tab(char **zone);
 char **copy_tab(char **array);
@@ -128,4 +136,7 @@ void free_array(char **array, t_root *root);
 void input_position(t_root *root, char c);
 void print_movements(t_root *root);
 void print_tab(char **zone);
+void	next_collect_or_empty(t_root *root, int *last_is_door, char next);
+void	next_is_exit(t_root *root, int *last_is_door);
+void	walk_player(t_root *root, int x, int y);
 #endif

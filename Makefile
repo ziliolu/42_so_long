@@ -5,13 +5,15 @@ SRCS =	./src/main.c				\
 		./src/args_validations.c	\
 		./src/destroy.c				\
 		./src/errors.c				\
-		./src/flood_fill.c			\
 		./src/game_init.c			\
 		./src/init_structs.c		\
 		./src/invalid_character.c	\
 		./src/key_hook.c			\
 		./src/map_creation.c		\
-		./src/map_validations.c			
+		./src/init_map_structs.c	\
+		./src/map_validations.c		\
+		./src/map_validations2.c	\
+		./src/change_player_position.c
 
 AR = ar rc
 CFLAGS = -Wextra -Werror -Wall -g -O3
