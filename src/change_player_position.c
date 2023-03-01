@@ -6,7 +6,7 @@
 /*   By: lpicoli- < lpicoli-@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 15:13:11 by lpicoli-          #+#    #+#             */
-/*   Updated: 2023/03/01 22:45:35 by lpicoli-         ###   ########.fr       */
+/*   Updated: 2023/03/01 23:46:52 by lpicoli-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ void	change_player_position(t_root *root, int direction)
 		root->player.next_y = root->player.y;
 	}
 }
+
 void	next_collect_or_empty(t_root *root, int *last_is_door, char next)
 {
 	int	next_y;

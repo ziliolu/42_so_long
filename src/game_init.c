@@ -6,7 +6,7 @@
 /*   By: lpicoli- < lpicoli-@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 10:15:58 by lpicoli-          #+#    #+#             */
-/*   Updated: 2023/03/01 22:41:10 by lpicoli-         ###   ########.fr       */
+/*   Updated: 2023/03/01 22:59:55 by lpicoli-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	game_init(t_root root)
 {
 	initial_image_render(&root);
-	input_position(&root, EXIT);
+	input_exit_position(&root);
 	mlx_hook(root.mlx.window_ptr, KeyPress, KeyPressMask, &key_hook, &root);
 	mlx_hook(root.mlx.window_ptr, 17, (1L << 17), &destroy, &root);
 }

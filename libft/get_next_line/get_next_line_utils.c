@@ -6,12 +6,11 @@
 /*   By: lpicoli- < lpicoli-@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 22:03:17 by lpicoli-          #+#    #+#             */
-/*   Updated: 2023/02/08 19:03:01 by lpicoli-         ###   ########.fr       */
+/*   Updated: 2023/03/01 23:52:23 by lpicoli-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -80,9 +79,3 @@ char	*ft_join_stash(char *stash, char *buffer)
 	free(stash);
 	return (tmp);
 }
-
-/* 
-int main()
-{
-	printf("%ld", ft_strlen("ola"));
-} */

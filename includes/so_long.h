@@ -101,42 +101,13 @@ typedef struct s_root
 
 }			t_root;
 
-int times_it_appear(char **array, char c);
-void	destroy_images(t_root *root);
-void err_message(char *str, int *error);
-void ft_animate(t_root *root);
-int args_validation(int argc, char **argv);
-char **map_array_creation(int fd);
-void map_fulfill(t_root *root, char **array);
-int count_line(char **array);
-void check_map (t_root *root);
-t_map ft_initialize_map(void);
-void ft_initialize_map_err(t_root *root);
-int ft_verify_extension(char *str, char *extension);
-int verify_other_cols(char **array, int i);
-int count_col(char **array);
-int times_it_appear(char **array, char c);
-void ft_print_err(t_root *root);
-int not_surrounded_by_walls(t_root *root);
-int invalid_character(char **array);
-t_path ft_initialize_paths(t_root *root);
-void ft_initialize_mlx(t_root *root);
-void game_init(t_root root);
-void initial_image_render(t_root *root);
-void change_player_position(t_root *root, int direction);
-int key_hook(int key, t_root *root);
-t_sprite ft_initialize_sprite();
-void ft_initialize_counter(t_root *root);
-void input_player_position(t_root *root);
-void print_tab(char **zone);
-char **copy_tab(char **array);
-int init_structs(t_root *root, char *fd);
-int destroy(t_root *root);
-void free_array(char **array, t_root *root);
-void input_position(t_root *root, char c);
-void print_movements(t_root *root);
-void print_tab(char **zone);
+/* args_validations */
+int	args_validation(int argc, char **argv);
+int	ft_verify_extension(char *str, char *extension);
+
+/*change_player_position*/
+void	change_player_position(t_root *root, int direction);
 void	next_collect_or_empty(t_root *root, int *last_is_door, char next);
 void	next_is_exit(t_root *root, int *last_is_door);
-void	walk_player(t_root *root, int x, int y);
+
 #endif

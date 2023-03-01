@@ -6,38 +6,51 @@
 /*   By: lpicoli- < lpicoli-@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 12:25:22 by lpicoli-          #+#    #+#             */
-/*   Updated: 2023/03/01 22:46:05 by lpicoli-         ###   ########.fr       */
+/*   Updated: 2023/03/01 23:01:02 by lpicoli-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/so_long.h"
 
-void input_position(t_root *root, char c)
+void	input_player_position(t_root *root)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
+
 	i = 0;
-	while(root->map.map_array[i])
+	while (root->map.map_array[i])
 	{
 		j = 0;
-		while(root->map.map_array[i][j])
+		while (root->map.map_array[i][j])
 		{	
-			if(root->map.map_array[i][j] == c)
+			if (root->map.map_array[i][j] == PLAYER)
 			{
-				if(c == EXIT)
-				{
-					root->exit.x = j;
-					root->exit.y = i;
-					root->exit.next_x = j;
-					root->exit.next_y = i;
-				}
-				else
-				{
-					root->player.x = j;
-					root->player.y = i;
-					root->player.next_x = j;
-					root->player.next_y = i;
-				}
+				root->player.x = j;
+				root->player.y = i;
+				root->player.next_x = j;
+				root->player.next_y = i;
+			}	
+			j++;
+		}	
+		i++;
+	}
+}
+
+void	input_exit_position(t_root *root)
+{
+	int	i;
+	int	j;
+
+	i = 0;
+	while (root->map.map_array[i])
+	{
+		j = 0;
+		while (root->map.map_array[i][j])
+		{	
+			if (root->map.map_array[i][j] == EXIT)
+			{
+				root->exit.x = j;
+				root->exit.y = i;
 			}	
 			j++;
 		}	
