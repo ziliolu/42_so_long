@@ -6,11 +6,11 @@
 /*   By: lpicoli- < lpicoli-@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 22:43:59 by lpicoli-          #+#    #+#             */
-/*   Updated: 2023/03/01 22:44:27 by lpicoli-         ###   ########.fr       */
+/*   Updated: 2023/03/02 16:03:04 by lpicoli-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "./includes/so_long.h"
 
 int	main(int argc, char **argv)
 {

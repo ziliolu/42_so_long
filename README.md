@@ -28,8 +28,6 @@ Maybe you could notice a different coding style. At 42 schools we need to follow
 - Functions with more than 25 lines are not allowed <p> 
 - Variables declarations and assigns in the same line are not allowed <p> 
     
-
-
 ## ⚙️ Compilation
 
 To compile and run the project at the same time it's very easy, you can just follow the syntax below: 

@@ -6,7 +6,7 @@
 /*   By: lpicoli- < lpicoli-@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 23:16:55 by lpicoli-          #+#    #+#             */
-/*   Updated: 2023/03/01 23:27:55 by lpicoli-         ###   ########.fr       */
+/*   Updated: 2023/03/02 16:56:21 by lpicoli-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,27 @@ char	**map_array_creation(int fd)
 	}
 	if (map_array[0] == '\0' || map_array[0] == '\n')
 		return (NULL);
+	if (verify_new_line(map_array) == 1)
+		return (NULL);
 	map = ft_split(map_array, '\n');
 	free(map_array);
 	if (!map)
 		return (NULL);
 	return (map);
+}
+
+int	verify_new_line(char *array)
+{
+	int	i;
+
+	i = 0;
+	while (array[i])
+	{
+		if (array[i] == '\n' && array[i + 1] == '\n')
+			return (1);
+		i++;
+	}
+	return (0);
 }
 
 void	map_fulfill(t_root *root, char **array)

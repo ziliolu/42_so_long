@@ -1,7 +1,7 @@
 NAME = so_long.a
 EXECUTABLE = so_long
 LIBFT_A = ./libft/libft.a
-SRCS =	./src/main.c				\
+SRCS =	./main.c					\
 		./src/args_validations.c	\
 		./src/destroy.c				\
 		./src/errors.c				\
