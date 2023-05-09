@@ -6,7 +6,7 @@ The "so_long" project is a part of 42's curriculum and involves creating a 2D ga
 The project includes learning about file descriptors (fd) and their use in reading from a map file as well as how to deal with structs. These are important concepts in C programming, and this project provides an opportunity to practice both in a fun and engaging way.
 
 #### Do you want to know more about it? 
-[Click here](https://github.com/ziliolu/42_so_long/blob/main/so_long_subject.pdf) to take a look in the complete subject.
+[Click here](https://github.com/ziliolu/42_so_long/blob/main/so_long_subject.pdf) to access the 
 ## ⚙️ HOW TO INSTALL & PLAY 
 
 #### 1º - Clone the repository
@@ -39,9 +39,6 @@ The project includes learning about file descriptors (fd) and their use in readi
 - You have to use a 2D view (top-down or profile)
 
 
-
-
-
 ## 🚨 DISCLAIMER 
 
 Maybe you could notice a different coding style.
@@ -53,8 +50,8 @@ At 42 we need to follow some rules according to the coding standard of the schoo
 - No more than 5 functions per each file
 - No more than 5 variables in the same function
 - No assigns and declarations assigns in the same line
-
 ```
+[Click here](https://github.com/MagicHatJo/-42-Norm/blob/master/norme.en.pdf) to open the norm file of 42 school
 
 
 ##  ✅ TESTERS
