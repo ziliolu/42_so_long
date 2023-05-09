@@ -1,51 +1,62 @@
-# so_long | rank 2 | 42 Porto
 
-This is my first programming graphic project!
-During the development, I could explore the main concepts about MiniLibX library to be able to code a simple 2D game. Also, I could learn about rendering, graphic management, color schemes and sprites and have a better understanding of Makefiles. 
+# ABOUT
 
-## 🎮 The game
+The "so_long" project is a part of 42's curriculum and involves creating a 2D game using C programming language and the MinilibX graphic library. The game requires players to navigate through a maze, collecting items and avoiding obstacles.
 
-- The player’s goal is to collect every collectible present on the map, then escape
-chosing the shortest possible route.
+The project includes learning about file descriptors (fd) and their use in reading from a map file as well as how to deal with structs. These are important concepts in C programming, and this project provides an opportunity to practice both in a fun and engaging way.
+
+#### Do you want to know more about it? 
+[Click here](https://github.com/Nuno-Jesus/so_long_map_validator) to take a look in the complete subject.
+## ⚙️ HOW TO INSTALL & PLAY 
+
+#### 1º - Clone the repository
+
+```bash
+  git clone git@github.com:ziliolu/42_so_long.git
+```
+
+#### 2º - Enter the project folder and run `make`
+
+```bash
+    cd so_long && make 
+```
+
+#### 3º - Choose a map from `maps` folder or test with your own map 
+
+```bash
+    ./so_long maps/valid1
+```
+```bash
+    ./so_long path_to_your_own_map
+```
+
+## 🎮 GAME RULES
+
+- The player’s goal is to collect every collectible present on the map, then escape chosing the shortest possible route.
+- At every move, the current number of movements must be displayed in the shell (or on the screen, for bonus!).
 - The player should be able to move in these 4 directions: up, down, left, right.
 - The player should not be able to move into walls.
-- At every move, the current number of movements must be displayed in the shell (or on the screen, for bonus!).
 - You have to use a 2D view (top-down or profile)
 
-You can also take a look in the [complete subject]. 
 
-## 💻 Languages & Tools
-<p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=c,Makefile" />
-  </a>
-  </p>
-</p>
 
-## 🚨 Disclaimer 
-Maybe you could notice a different coding style. At 42 schools we need to follow some rules like:
-- The usage of for, do while, switch, case is not allowed<p> 
-- Functions with more than 25 lines are not allowed <p> 
-- Variables declarations and assigns in the same line are not allowed <p> 
-    
-## ⚙️ Compilation
 
-To compile and run the project at the same time it's very easy, you can just follow the syntax below: 
 
-```sh
-$ make run arg=path_to_the_map_file.ber
+## 🚨 DISCLAIMER 
+
+Maybe you could notice a different coding style.
+At 42 we need to follow some rules according to the coding standard of the school such as:
+
+```bash
+- No for, do while, switch, case or goto 
+- No functions with more than 25 lines 
+- No more than 5 functions per each file
+- No more than 5 variables in the same function
+- No assigns and declarations assigns in the same line
+
 ```
-Make sure you have the right path of the map, if you prefer you can also test the project with some of the maps that I have available in `/maps`. 
-For this, you can run one of the following commands in the terminal: 
-  
-```sh
-$ make run arg=maps/valid1.ber
-```
-  
-```sh
-$ make run arg=maps/valid2.ber
-```
-  
-## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+
+##  ✅ TESTERS
+
+- [Map Validator](https://github.com/Nuno-Jesus/so_long_map_validator)
