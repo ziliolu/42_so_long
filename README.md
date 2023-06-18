@@ -44,7 +44,7 @@ To install and play So_long, follow these steps:
 
 1. [Map Validator](https://github.com/Nuno-Jesus/so_long_map_validator) serves as an essential tool to validate and verify the format and correctness of the map, guaranteeing a reliable gameplay experience.
    
-## 🚨 Disclaimer
+## Disclaimer 🚨 
 
 Maybe you could notice a different coding style.
 At 42 we need to follow some rules according to the coding standard of the school such as:
