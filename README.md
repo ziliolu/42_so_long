@@ -27,10 +27,10 @@ To install and play So_long, follow these steps:
   ```
 3. Choose a map from `maps` folder or test with your own map
   ```bash
-  ./so_long maps/valid1.ber
+  ./42_so_long maps/valid1.ber
   ```
   ```bash
-  ./so_long path_to_your_own_map
+  ./42_so_long path_to_your_own_map
   ```
 ## Game rules
 
