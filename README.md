@@ -23,9 +23,9 @@ To install and play So_long, follow these steps:
   ./so_long maps/valid1.ber
   ```
   ```bash
-    ./so_long path_to_your_own_map
+  ./so_long path_to_your_own_map
   ```
-## 🎮 Game rules
+## Game rules
 
 - The player’s goal is to collect every collectible present on the map, then escape chosing the shortest possible route.
 - At every move, the current number of movements must be displayed in the shell (or on the screen, for bonus!).
@@ -33,7 +33,10 @@ To install and play So_long, follow these steps:
 - The player should not be able to move into walls.
 - You have to use a 2D view (top-down or profile)
 
+## Testers 
 
+1. [Map Validator](https://github.com/Nuno-Jesus/so_long_map_validator) serves as an essential tool to validate and verify the format and correctness of the map, guaranteeing a reliable gameplay experience.
+   
 ## 🚨 Disclaimer
 
 Maybe you could notice a different coding style.
@@ -47,8 +50,3 @@ At 42 we need to follow some rules according to the coding standard of the schoo
 - No assigns and declarations assigns in the same line
 ```
 [Click here](https://github.com/MagicHatJo/-42-Norm/blob/master/norme.en.pdf) to read the norm file of 42 school. 
-
-
-##  ✅ TESTERS
-
-- [Map Validator](https://github.com/Nuno-Jesus/so_long_map_validator)
