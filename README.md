@@ -6,28 +6,23 @@ The "so_long" project is a part of 42's curriculum and involves creating a 2D ga
 The project includes learning about file descriptors (fd) and their use in reading from a map file as well as how to deal with structs. These are important concepts in C programming, and this project provides an opportunity to practice both in a fun and engaging way.
 
 [Click here](https://github.com/ziliolu/42_so_long/blob/main/so_long_subject.pdf) to access the complete subject of this project.
-## ⚙️ How to install & play 
+## Installation
 
-#### 1º - Clone the repository
+To install and play So_long, follow these steps:
 
-```bash
+1. Clone the repository:
+  ```bash
   git clone git@github.com:ziliolu/42_so_long.git
-```
-
-#### 2º - Enter the project folder and run `make`
-
-```bash
-    cd so_long && make 
-```
-
-#### 3º - Choose a map from `maps` folder or test with your own map 
-
-```bash
-    ./so_long maps/valid1
-```
-```bash
+  ```
+2. Navigate to the project directory and compile it:
+   ```bash
+    cd so_long && make
+    ```
+3. Choose a map from `maps` folder or test with your own map
+  ```bash
+  ./so_long maps/valid1.ber
+  ```bash
     ./so_long path_to_your_own_map
-```
 
 ## 🎮 Game rules
 
