@@ -1,13 +1,12 @@
 
-# ABOUT
+# About
 
 The "so_long" project is a part of 42's curriculum and involves creating a 2D game using C programming language and the MinilibX graphic library. The game requires players to navigate through a maze, collecting items and avoiding obstacles.
 
 The project includes learning about file descriptors (fd) and their use in reading from a map file as well as how to deal with structs. These are important concepts in C programming, and this project provides an opportunity to practice both in a fun and engaging way.
 
-#### Do you want to know more about it? 
 [Click here](https://github.com/ziliolu/42_so_long/blob/main/so_long_subject.pdf) to access the complete subject of this project.
-## ⚙️ HOW TO INSTALL & PLAY 
+## ⚙️ How to install & play 
 
 #### 1º - Clone the repository
 
@@ -30,7 +29,7 @@ The project includes learning about file descriptors (fd) and their use in readi
     ./so_long path_to_your_own_map
 ```
 
-## 🎮 GAME RULES
+## 🎮 Game rules
 
 - The player’s goal is to collect every collectible present on the map, then escape chosing the shortest possible route.
 - At every move, the current number of movements must be displayed in the shell (or on the screen, for bonus!).
@@ -39,7 +38,7 @@ The project includes learning about file descriptors (fd) and their use in readi
 - You have to use a 2D view (top-down or profile)
 
 
-## 🚨 DISCLAIMER 
+## 🚨 Disclaimer
 
 Maybe you could notice a different coding style.
 At 42 we need to follow some rules according to the coding standard of the school such as:
