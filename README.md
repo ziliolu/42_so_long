@@ -1,7 +1,7 @@
 ## Table of Contents
 - [About](#about)
 - [Installation](#installation)
-- [Game rules](#gamerules)
+- [Gamerules](#gamerules)
 - 
 ## About
 
