@@ -1,3 +1,6 @@
+
+<img src="https://img.shields.io/badge/score-12520%2F%20100-success?color=%2312bab9&style=flat-square" />
+
 ## Table of Contents
 
 1. [About](#about)
