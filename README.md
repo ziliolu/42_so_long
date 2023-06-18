@@ -15,9 +15,9 @@ To install and play So_long, follow these steps:
   git clone git@github.com:ziliolu/42_so_long.git
   ```
 2. Navigate to the project directory and compile it:
-   ```bash
-    cd so_long && make
-   ```
+  ```bash
+  cd so_long && make
+  ```
 3. Choose a map from `maps` folder or test with your own map
   ```bash
   ./so_long maps/valid1.ber
