@@ -17,13 +17,14 @@ To install and play So_long, follow these steps:
 2. Navigate to the project directory and compile it:
    ```bash
     cd so_long && make
-    ```
+   ```
 3. Choose a map from `maps` folder or test with your own map
   ```bash
   ./so_long maps/valid1.ber
+  ```
   ```bash
     ./so_long path_to_your_own_map
-
+  ```
 ## 🎮 Game rules
 
 - The player’s goal is to collect every collectible present on the map, then escape chosing the shortest possible route.
