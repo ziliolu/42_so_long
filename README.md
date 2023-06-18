@@ -1,4 +1,8 @@
-
+## Table of Contents
+- [About](#about)
+- [Installation](#installation)
+- [Game rules](#gamerules)
+- 
 ## About
 
 The "so_long" project is a part of 42's curriculum and involves creating a 2D game using C programming language and the MinilibX graphic library. The game requires players to navigate through a maze, collecting items and avoiding obstacles.
