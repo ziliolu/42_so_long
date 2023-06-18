@@ -4,7 +4,7 @@
 2. [Installation](#installation)
 3. [Game rules](#game-rules)
 4. [Testers](#testers)
-5. [🚨Disclaimer](#🚨-disclaimer)
+5. [🚨 Disclaimer](#🚨-disclaimer)
 
 ## About
 
