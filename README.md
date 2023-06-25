@@ -15,41 +15,32 @@
 
 ## About
 
-The "so_long" project is a part of 42's curriculum and involves creating a 2D game using C programming language and the MinilibX graphic library. The game requires players to navigate through a maze, collecting items and avoiding obstacles.
+The get_next_line project is a function in C that allows you to read one line at a time from a file or an input stream, such as standard input. The function should handle different file descriptors and read from multiple file descriptors without losing the reading thread.
 
-The project includes learning about file descriptors (fd) and their use in reading from a map file as well as how to deal with structs. These are important concepts in C programming, and this project provides an opportunity to practice both in a fun and engaging way.
+The function get_next_line takes a file descriptor as a parameter and returns the next line from the corresponding file. Each time the function is called, it reads from the file until it finds a newline character ('\n') or reaches the end of the file. It then returns the line as a string, including the newline character, or NULL if there are no more lines to read or if an error occurs.
 
-[Click here](https://github.com/ziliolu/42_so_long/blob/main/so_long_subject.pdf) to access the complete subject of this project.
+[Click here](https://github.com/ziliolu/42_so_long/blob/main/get_next_line_subject.pdf) to access the complete subject of this project.
+
 ## Installation
 
-To install and play So_long, follow these steps:
+To install and use Get Next Line, follow these steps:
 
 1. Clone the repository:
   ```bash
-  git clone git@github.com:ziliolu/42_so_long.git
+  git clone git@github.com:ziliolu/42_get_next_line.git
   ```
-2. Navigate to the project directory and compile it:
+2. Add to your own project by including the library:
   ```bash
-  cd so_long && make
+  #include "get_next_line.h"
   ```
-3. Choose a map from `maps` folder or test with your own map
+3. Call the function passing the fd that should be read:
   ```bash
-  ./42_so_long maps/valid1.ber
+  get_next_line(fd) //it will return a char *
   ```
+4. You can also run my own test by compiling and running it:
   ```bash
-  ./42_so_long path_to_your_own_map
+  cc get_next_line.c get_next_line_utils.c main.c && ./a.out
   ```
-## Game rules
-
-- The player’s goal is to collect every collectible present on the map, then escape chosing the shortest possible route.
-- At every move, the current number of movements must be displayed in the shell (or on the screen, for bonus!).
-- The player should be able to move in these 4 directions: up, down, left, right.
-- The player should not be able to move into walls.
-- You have to use a 2D view (top-down or profile)
-
-## Testers 
-
-1. [Map Validator](https://github.com/Nuno-Jesus/so_long_map_validator) serves as an essential tool to validate and verify the format and correctness of the map, guaranteeing a reliable gameplay experience.
    
 ## Disclaimer 
 
