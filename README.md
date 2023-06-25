@@ -23,7 +23,7 @@ Click here to access the complete subject of this project.
 
 ## Installation
 
-To install and use Get Next Line, follow these steps:
+To install and play So Long, follow these steps:
 
 1. Clone the repository:
   ```bash
