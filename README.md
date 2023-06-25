@@ -17,7 +17,7 @@ The get_next_line project is a function in C that allows you to read one line at
 
 The function get_next_line takes a file descriptor as a parameter and returns the next line from the corresponding file. Each time the function is called, it reads from the file until it finds a newline character ('\n') or reaches the end of the file. It then returns the line as a string, including the newline character, or NULL if there are no more lines to read or if an error occurs.
 
-The get_next_line function follows the following steps:
+The function follows the following steps:
 
 1. The function reads a specified buffer size from the file descriptor into a buffer.
 2. If the buffer contains a newline character ('\n'), the function concatenates the buffer with the previous buffer up to the newline character and returns the line.
