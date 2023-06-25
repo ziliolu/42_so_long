@@ -27,21 +27,20 @@ To install and use Get Next Line, follow these steps:
 
 1. Clone the repository:
   ```bash
-  git clone git@github.com:ziliolu/42_get_next_line.git
+  git clone git@github.com:ziliolu/42_so_long.git
   ```
-2. Add to your own project by including the library:
+2. Navigate to the project directory and compile it:
   ```bash
-  #include "get_next_line.h"
+  cd so_long && make
   ```
-3. Call the function passing the fd that should be read:
+3. Choose a map from maps folder or test with your own map
   ```bash
-  get_next_line(fd) //it will return a char *
+ ./42_so_long maps/valid1.ber
   ```
-4. You can also run my own test by compiling and running it:
   ```bash
-  cc get_next_line.c get_next_line_utils.c main.c && ./a.out
+  ./42_so_long path_to_your_own_map
   ```
-   
+
 ## Disclaimer 
 
 Maybe you could notice a different coding style.
