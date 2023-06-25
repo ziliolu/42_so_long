@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/github/languages/top/ziliolu/42_so_long?color=#FFFFFF&style=flat-square" />
-  <img src="https://img.shields.io/badge/score-100%20%2F%20100-success?color=#FFFFFF&style=flat-square" />
+  <img src="https://img.shields.io/badge/score-125%20%2F%20100-success?color=#FFFFFF&style=flat-square" />
   <img src="https://img.shields.io/badge/status-finished-success?color=#FFFFFF&style=flat-square" />
   <img src="https://img.shields.io/github/last-commit/ziliolu/42_so_long?color=#FFFFFF&style=flat-square" />
 </p>
